@@ -7,7 +7,7 @@ function Hero() {
       id="home"
       className="w-full h-[600px] flex justify-center items-center bg-primary"
     >
-      <div className="w-[1120px] flex flex-col-reverse md:grid md:grid-cols-2">
+      <div className="md:w-[1120px] flex flex-col-reverse md:grid md:grid-cols-2">
         <div className="font-poppins flex flex-col text-white justify-center p-6 space-y-10">
           <h1 className="text-6xl border-l-4 border-font font-bold uppercase">
             &nbsp;Deviprasad &nbsp;Rai P
