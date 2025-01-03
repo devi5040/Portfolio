@@ -4,16 +4,23 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#2F2FA2",
-        secondary: "#D9D9D9",
-        font: "#F64C72",
-        card: "#242582",
-        cardFont: "#ececec",
-      },
-      fontFamily: {
-        poppins: "Poppins",
+        background: "#00008a",
+        dark: "#0d0d0d",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".scrollbar-hide": {
+          /* Hide scrollbar for modern browsers */
+          "-ms-overflow-style": "none" /* IE and Edge */,
+          "scrollbar-width": "none" /* Firefox */,
+          "&::-webkit-scrollbar": {
+            display: "none" /* Chrome, Safari, and Opera */,
+          },
+        },
+      });
+    },
+  ],
 };
